@@ -1,0 +1,67 @@
+@import "./components/page";
+
+.introduction {
+    @include content-padding(80px, 0);
+
+    .list {
+        display: grid;
+        gap: 50px;
+
+        .item {
+            display: grid;
+            gap: 15px;
+
+            .title {
+                text-align: center;
+                padding-bottom: 15px;
+                color: #2563eb;
+
+                &.def {
+                    text-align: left;
+                    color: #1a1a1a;
+                }
+            }
+
+            .content {
+                max-width: 800px;
+                margin: 0 auto;
+                background-color: #f9f9f9;
+                padding: 20px;
+                border-radius: 10px;
+                line-height: 2;
+                text-align: justify;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+.value {
+    @include content-bg(#f9f9f9);
+    @include content-padding(80px, 0);
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .item {
+            @extend %content-item;
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .value {
+        .list {
+            grid-template-columns: 1fr;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}

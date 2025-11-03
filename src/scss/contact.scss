@@ -1,0 +1,130 @@
+@import "./components/page";
+
+.contact-info {
+    padding: 40px 0;
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        .information {
+            background-color: #fafafa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.097);
+
+            .title {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: #1f1f1f;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .info-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 20px;
+
+                .icon {
+                    font-size: 1.8rem;
+                    color: #3079cd;
+                }
+
+                .subtitle {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: #1f1f1f;
+                }
+
+                .content {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #3e3e3e;
+                }
+            }
+        }
+
+        .form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.097);
+
+            .title {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: #1f1f1f;
+                margin-bottom: 10px;
+            }
+
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 10px;
+
+                .input-item {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #e0e0e0;
+                    outline: none;
+
+                    &:focus {
+                        border-color: #3079cd;
+                    }
+                }
+
+                textarea {
+                    height: 100px;
+                    resize: none;
+                }
+            }
+
+            .button-group {
+                .btn {
+                    padding: 12px 50px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #3079cd;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: #20609e;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map {
+    padding: 40px 0;
+    background-color: #fafafa;
+
+    .title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #1f1f1f;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .google-map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-info {
+        .wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+}

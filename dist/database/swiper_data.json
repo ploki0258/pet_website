@@ -1,0 +1,37 @@
+[
+    {
+        "backgroundImage": "/images/1.jpg",
+        "title": "創新科技解決方案1",
+        "content": "為您的企業打造最佳數位體驗1",
+        "btn": "立即諮詢1",
+        "btnLink": "/contact.html"
+    },
+    {
+        "backgroundImage": "/images/2.jpg",
+        "title": "創新科技解決方案2",
+        "content": "為您的企業打造最佳數位體驗2",
+        "btn": "立即諮詢2",
+        "btnLink": "/about.html"
+    },
+    {
+        "backgroundImage": "/images/3.jpg",
+        "title": "創新科技解決方案3",
+        "content": "為您的企業打造最佳數位體驗3",
+        "btn": "立即諮詢3",
+        "btnLink": "/about.html"
+    },
+    {
+        "backgroundImage": "/images/4.jpg",
+        "title": "創新科技解決方案4",
+        "content": "為您的企業打造最佳數位體驗4",
+        "btn": "立即諮詢4",
+        "btnLink": "/about.html"
+    },
+    {
+        "backgroundImage": "/images/5.jpg",
+        "title": "創新科技解決方案5",
+        "content": "為您的企業打造最佳數位體驗5",
+        "btn": "立即諮詢5",
+        "btnLink": "/about.html"
+    }
+]

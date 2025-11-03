@@ -1,0 +1,116 @@
+:root {
+    --menu-text-color: #2240ea;
+    --global-header-height: 80px;
+}
+
+.header {
+    width: 100%;
+    height: var(--global-header-height);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    #mobile-menu-checkbox {
+        display: none;
+    }
+
+    .wrap {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: sans-serif;
+            color: var(--menu-text-color);
+
+            img {
+                width: 80px;
+                height: auto;
+            }
+        }
+
+        .menu {
+            ul {
+                font-weight: 400;
+                display: flex;
+                gap: 15px;
+
+                a {
+                    padding: 0 2px;
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid transparent;
+
+                    &:hover {
+                        color: var(--menu-text-color);
+                    }
+
+                    &.active {
+                        color: var(--menu-text-color);
+                        border-bottom: 2px solid var(--menu-text-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}
+
+.header-gap {
+    margin-top: var(--global-header-height);
+}
+
+@media (max-width: 768px) {
+    .header {
+        .wrap {
+            justify-content: flex-end;
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .logo {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        #mobile-menu-checkbox:checked {
+            + .wrap {
+                .menu {
+                    display: block;
+                    position: fixed;
+                    top: var(--global-header-height);
+                    left: 0;
+                    background-color: #fff;
+                    width: 100%;
+                    padding: 40px 0;
+                    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.184);
+                    z-index: 9;
+
+                    ul {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
