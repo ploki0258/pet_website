@@ -4,6 +4,8 @@ class Header {
         if (!dom) return;
 
         let respons = await fetch("/components/_header.html");
+        console.log("respons:", respons);
+
         let html = await respons.text();
         dom.innerHTML = html;
 
