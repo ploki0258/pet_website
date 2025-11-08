@@ -7,6 +7,7 @@ const options = {
         return {
             items: [],
             item: {},
+            index: [],
             currentIndex: 0,
             action: "in",
             loop: {
@@ -29,8 +30,11 @@ const options = {
         },
         async initItems() {
             let response = await fetch("/database/swiper_data.json");
+            let responseIndex = await fetch("/database/index_data.json");
             let data = await response.json();
+            let dataIndex = await responseIndex.json();
             this.items = data;
+            this.index = dataIndex;
         },
         setCurrentIndex(index) {
             if (this.runLock) {

@@ -1,8 +1,19 @@
 .footer {
+    font-weight: 600;
     height: 60px;
-    background-color: #371f1f;
+    background-color: #333333;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .icon-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+            cursor: pointer;
+        }
+    }
 }

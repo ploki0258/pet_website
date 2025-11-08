@@ -1,37 +1,37 @@
 [
     {
-        "backgroundImage": "/images/1.jpg",
-        "title": "創新科技解決方案1",
-        "content": "為您的企業打造最佳數位體驗1",
-        "btn": "立即諮詢1",
+        "backgroundImage": "/images/banner/1.jpg",
+        "title": "毛孩同行",
+        "content": "用心守護每個毛孩的日常",
+        "btn": "一起加入我們",
+        "btnLink": "/about.html"
+    },
+    {
+        "backgroundImage": "/images/banner/2.jpg",
+        "title": "浪愛延續",
+        "content": "幫浪浪找個家",
+        "btn": "一起加入我們",
+        "btnLink": "/about.html"
+    },
+    {
+        "backgroundImage": "/images/banner/3.jpg",
+        "title": "浪愛有家",
+        "content": "愛牠就不要拋棄牠",
+        "btn": "一起加入我們",
         "btnLink": "/contact.html"
     },
     {
-        "backgroundImage": "/images/2.jpg",
-        "title": "創新科技解決方案2",
-        "content": "為您的企業打造最佳數位體驗2",
-        "btn": "立即諮詢2",
+        "backgroundImage": "/images/banner/4.jpg",
+        "title": "細心照料",
+        "content": "愛護每位毛孩，愛心呵護",
+        "btn": "一起加入我們",
         "btnLink": "/about.html"
     },
     {
-        "backgroundImage": "/images/3.jpg",
-        "title": "創新科技解決方案3",
-        "content": "為您的企業打造最佳數位體驗3",
-        "btn": "立即諮詢3",
-        "btnLink": "/about.html"
-    },
-    {
-        "backgroundImage": "/images/4.jpg",
-        "title": "創新科技解決方案4",
-        "content": "為您的企業打造最佳數位體驗4",
-        "btn": "立即諮詢4",
-        "btnLink": "/about.html"
-    },
-    {
-        "backgroundImage": "/images/5.jpg",
-        "title": "創新科技解決方案5",
-        "content": "為您的企業打造最佳數位體驗5",
-        "btn": "立即諮詢5",
+        "backgroundImage": "/images/banner/5.jpg",
+        "title": "愛心志工",
+        "content": "一同救助，多份關心",
+        "btn": "一起加入我們",
         "btnLink": "/about.html"
     }
 ]

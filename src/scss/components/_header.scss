@@ -1,12 +1,14 @@
 :root {
     --menu-text-color: #2240ea;
     --global-header-height: 80px;
+    --header-bg-color1: #f8e7af;
+    --header-bg-color2: #f8ccaf;
 }
 
 .header {
     width: 100%;
     height: var(--global-header-height);
-    background-color: #fff;
+    background: linear-gradient(-45deg, var(--header-bg-color1), var(--header-bg-color2));
     position: fixed;
     top: 0;
     left: 0;
@@ -25,9 +27,10 @@
         .logo {
             display: flex;
             align-items: center;
+            gap: 10px;
 
             img {
-                width: 80px;
+                width: 75px;
                 height: auto;
             }
 
@@ -43,27 +46,49 @@
             ul {
                 font-weight: 400;
                 display: flex;
-                gap: 15px;
+                gap: 40px;
 
-                a {
-                    padding: 0 2px;
-                    padding-bottom: 5px;
-                    border-bottom: 2px solid transparent;
+                li {
+                    position: relative;
 
-                    &:hover {
-                        color: var(--menu-text-color);
-                    }
+                    a {
+                        padding: 0 2px;
+                        padding-bottom: 5px;
+                        border-bottom: 2px solid transparent;
+                        font-weight: 800;
 
-                    &.active {
-                        color: var(--menu-text-color);
-                        border-bottom: 2px solid var(--menu-text-color);
-                    }
+                        &:hover {
+                            color: var(--menu-text-color);
 
-                    &::before {
-                        content: "";
-                        width: 25px;
-                        height: 25px;
-                        background: url(/images/header/menu-icon.svg);
+                            &::before {
+                                color: var(--menu-text-color);
+                                transform: rotate(15deg);
+                            }
+                        }
+
+                        &.active {
+                            color: var(--menu-text-color);
+                            border-bottom: 2px solid var(--menu-text-color);
+
+                            &::before {
+                                transform: rotate(15deg);
+                                color: var(--menu-text-color);
+                            }
+                        }
+
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            background: url(/images/header/menu-icon.svg);
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: -26px;
+                            margin: auto;
+                            transform: rotate(-15deg);
+                        }
                     }
                 }
             }

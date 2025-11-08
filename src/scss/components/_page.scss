@@ -136,7 +136,7 @@
 
 %page-banner {
     @include banner-padding(var(--banner-pad-v), 15px);
-    background: linear-gradient(#2463ebe6, rgba(30, 64, 175, 0.9));
+    background: linear-gradient(180deg, #ffadc1e6, #fca988e6);
     color: #fff;
 
     .wrap {
@@ -168,8 +168,8 @@
 
 %banner-content {
     font-size: 1rem;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: #e3e3e3;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    color: #202020;
     font-style: italic;
     text-align: center;
     line-height: 1.8;
