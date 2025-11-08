@@ -257,9 +257,11 @@
             }
 
             .cotent {
-                text-align: center;
+                width: 30%;
+                text-align: left;
                 line-height: 1.5;
                 color: #6b7280;
+                max-height: 300px;
             }
 
             .tags {

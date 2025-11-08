@@ -19,7 +19,7 @@
                 font-size: 1.6rem;
                 font-weight: 600;
                 color: #1f1f1f;
-                text-align: left;
+                text-align: center;
                 margin-bottom: 20px;
             }
 
@@ -28,16 +28,18 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: flex-start;
+                align-items: center;
+                gap: 100px;
             }
 
             .info-item {
                 display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
                 gap: 16px;
                 margin-bottom: 20px;
+                // border: 1px solid red;
 
                 &.address {
                     order: 1;
@@ -52,9 +54,11 @@
                 .icon-wrap {
                     width: 150px;
                     display: flex;
-                    justify-content: flex-start;
+                    flex-direction: column;
+                    justify-content: center;
                     align-items: center;
                     gap: 10px;
+                    // border: 1px solid blue;
                 }
 
                 .icon {
