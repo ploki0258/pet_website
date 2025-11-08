@@ -16,7 +16,7 @@
             "savePath": "/dist/css"
         }
     ],
-    "liveServer.settings.port": 5500,
+    "liveServer.settings.port": 5501,
     "liveServer.settings.root": "/dist",
     "liveSassCompile.settings.showOutputWindowOn": "Error",
     "workbench.colorCustomizations": {

@@ -23,14 +23,19 @@
         align-items: center;
 
         .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            font-family: sans-serif;
-            color: var(--menu-text-color);
+            display: flex;
+            align-items: center;
 
             img {
                 width: 80px;
                 height: auto;
+            }
+
+            .logo-title {
+                font-size: 2rem;
+                font-weight: 700;
+                font-family: sans-serif;
+                color: var(--menu-text-color);
             }
         }
 
@@ -52,6 +57,13 @@
                     &.active {
                         color: var(--menu-text-color);
                         border-bottom: 2px solid var(--menu-text-color);
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 25px;
+                        height: 25px;
+                        background: url(/images/header/menu-icon.svg);
                     }
                 }
             }
