@@ -22,6 +22,22 @@
         <div class="fosterCare">
             <div class="container">
                 <h2 class="title">寄養專區</h2>
+                <div class="list-wrap">
+                    <div class="list">
+                        <template v-for="(item, index) in paginate()" :key="index">
+                            <div class="item">
+                                <div class="date">{{ item.date }}</div>
+                                <div class="title">{{ item.title }}</div>
+                                <div class="content">{{ shortDesc(item.desc) }}</div>
+                                <div class="more">
+                                    <a :href="`news-detail.html?uid=${item.uid}`" class="btn"
+                                        >閱讀更多 <i class="fa-solid fa-arrow-right"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="footer-endpoint"></div>

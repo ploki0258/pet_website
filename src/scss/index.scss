@@ -170,23 +170,23 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 50px;
+            gap: 100px;
             transition: all 0.3s ease;
 
-            &:hover {
-                transform: translateY(-10px);
+            &:hover .picture img {
+                // transform: translateY(-10px);
+                border-radius: 20%;
                 box-shadow: 0 0 15px 2px #0000005d;
             }
 
             .picture {
                 img {
-                    border-radius: 20px;
+                    border-radius: 100%;
                     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
+                    object-fit: cover;
                     width: 300px;
-                    height: auto;
+                    height: 300px;
+                    transition: all 0.3s ease;
                 }
             }
 
@@ -234,19 +234,19 @@
             overflow: hidden;
 
             &:hover {
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 6px;
-                    background-color: #2b6fe3;
-                }
+                // &::before {
+                //     content: "";
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 6px;
+                //     background-color: #2b6fe3;
+                // }
 
-                .icon {
-                    transform: rotate(15deg) scale(1.2);
-                }
+                // .icon {
+                //     transform: rotate(15deg) scale(1.2);
+                // }
             }
 
             .icon {
@@ -257,11 +257,33 @@
             }
 
             .cotent {
-                width: 30%;
+                width: 100%;
+                overflow-y: auto;
                 text-align: left;
                 line-height: 1.5;
                 color: #6b7280;
                 max-height: 300px;
+                // border: 1px solid red;
+
+                li {
+                    padding: 10px 0;
+                    padding-left: 400px;
+                    font-size: 1.1rem;
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 30px;
+                    // border: 1px solid blue;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &:hover .content {
+                        color: #ec910a;
+                    }
+                }
             }
 
             .tags {
