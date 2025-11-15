@@ -7,6 +7,7 @@ const options = {
         return {
             items: [],
             item: {},
+            announcementList: [],
             index: [],
             currentIndex: 0,
             action: "in",
@@ -35,6 +36,12 @@ const options = {
             let dataIndex = await responseIndex.json();
             this.items = data;
             this.index = dataIndex;
+        },
+        async initAnnouncementData() {
+            let response = await fetch("/database/announcement_data.json");
+            let data = await response.json();
+            this.announcementList = data;
+            console.log("載入公告資料");
         },
         setCurrentIndex(index) {
             if (this.runLock) {
@@ -117,9 +124,11 @@ const options = {
         console.log("mounted");
         await this.initItems();
         this.initItem();
+        this.initAnnouncementData();
     },
 };
 
 const { createApp } = Vue;
 
 createApp(options).mount("#swiper-app");
+createApp(options).mount("#announcement-app");

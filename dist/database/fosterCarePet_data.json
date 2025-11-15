@@ -1,0 +1,112 @@
+{
+    "A1B2C3D4E5": {
+        "id": 1,
+        "name": "小可",
+        "age": "1 歲 2 個月",
+        "breed": "米克斯",
+        "gender": "公",
+        "date": "2025-09-25",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "膽小但親人，熟悉後會跟前跟後。",
+        "health": "已結紮、打過 3 合一疫苗、內外驅已完成"
+    },
+    "F6G7H8I9J0": {
+        "id": 2,
+        "name": "奶茶",
+        "age": "8 個月",
+        "breed": "米克斯",
+        "gender": "母",
+        "date": "2025/08/15",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "活潑愛玩，對小朋友很友善，喜歡跟人撒嬌。",
+        "health": "未結紮（可協助安排），已施打疫苗"
+    },
+    "K1L2M3N4O5": {
+        "id": 3,
+        "name": "阿福",
+        "age": "1 歲半",
+        "breed": "柴犬",
+        "gender": "公",
+        "date": "2025/10/02",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "穩定、聰明、懂指令，適合有飼養經驗的家庭。",
+        "health": "已結紮、無遺傳疾病、體內寄生蟲已清除"
+    },
+    "P6Q7R8S9T0": {
+        "id": 4,
+        "name": "小花",
+        "age": "2 歲",
+        "breed": "虎斑貓",
+        "gender": "母",
+        "date": "2025/07/28",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "溫柔安靜，不挑食，適合第一次養寵物的家庭。",
+        "health": "已結紮、口腔狀況良好、疫苗完整"
+    },
+    "U1V2W3X4Y5": {
+        "id": 5,
+        "name": "MoMo",
+        "age": "3 個月",
+        "breed": "米克斯幼犬",
+        "gender": "母",
+        "date": "2025/11/01",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "超級活潑外向，喜歡跟狗一起玩，適合喜愛戶外活動的人。",
+        "health": "幼犬三劑疫苗第 1 劑已施打"
+    },
+    "Z6A7B8C9D0": {
+        "id": 6,
+        "name": "小黑",
+        "age": "1歲",
+        "breed": "米克斯",
+        "gender": "公",
+        "date": "2025/10/10",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "害羞但親人，習慣跟人靠近，需要耐心陪伴。",
+        "health": "已結紮、已驅蟲"
+    },
+    "E1F2G3H4I5": {
+        "id": 7,
+        "name": "豆花",
+        "age": "2歲",
+        "breed": "黃金混米克斯",
+        "gender": "母",
+        "date": "2025/06/30",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "個性溫柔、會握手，適合新手飼主。",
+        "health": "健康良好、已施打疫苗"
+    },
+    "J6K7L8M9N0": {
+        "id": 8,
+        "name": "麻糬",
+        "age": "1歲",
+        "breed": "長毛混種",
+        "gender": "母",
+        "date": "2025/08/01",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "膽小但願意親近，適合有耐心的飼主。",
+        "health": "皮膚恢復中，已就醫治療"
+    },
+    "O1P2Q3R4S5": {
+        "id": 9,
+        "name": "大吉",
+        "age": "4歲",
+        "breed": "拉布拉多混種",
+        "gender": "公",
+        "date": "2025/09/10",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "超級親人，適合喜歡大型犬的家庭。",
+        "health": "已結紮、健康檢查正常"
+    },
+    "T6U7V8W9X0": {
+        "id": 10,
+        "name": "可可",
+        "age": "2歲半",
+        "breed": "三花貓",
+        "gender": "母",
+        "date": "2025/07/05",
+        "image": "/assets/pets/xiaojiang.jpg",
+        "personality": "很會撒嬌，適合喜歡安靜與溫柔狗狗的人。",
+        "health": "已施打疫苗、已結紮"
+    }
+}

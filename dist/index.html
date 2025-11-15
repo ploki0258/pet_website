@@ -61,66 +61,48 @@
                         <!-- <div class="icon">
                             <i class="fa-solid fa-bullhorn"></i>
                         </div> -->
-                        <ul class="cotent">
-                            <li>
+                        <ul class="cotent" id="announcement-app">
+                            <li v-for="item in announcementList" :key="item.id">
+                                <span class="date">{{item.date}}</span>
+                                <span class="sub-title">{{item.category}}</span>
+                                <span class="content">{{item.content}}</span>
+                            </li>
+                            <!-- <li>
                                 <span class="date">2025/11/10</span>
-                                <span class="sub-title">最新活動</span>
+                                <span class="sub-title">活動快訊</span>
                                 <span class="content">【中壢】秋季送養活動開跑 🐕</span>
                             </li>
                             <li>
-                                <span>2025/10/25</span> <span>最新活動</span>
+                                <span>2025/11/10</span>
+                                <span>最新消息</span>
                                 <span class="content">志工培訓課程開放報名</span>
                             </li>
                             <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
+                                <span>2025/10/25</span>
+                                <span>流浪救助</span>
                                 <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
                             </li>
                             <li>
                                 <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
+                                <span>活動快訊</span>
+                                <span class="content"
+                                    >【中壢】冬季送養日活動開跑，歡迎狗友共襄盛舉！</span
+                                >
                             </li>
                             <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
+                                <span>2025/09/30</span>
+                                <span>寄養公告</span>
+                                <span class="content"
+                                    >短期寄養志工募集中，協助照顧等待領養的浪浪們。</span
+                                >
                             </li>
                             <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
-                            </li>
-                            <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
-                            </li>
-                            <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
-                            </li>
-                            <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
-                            </li>
-                            <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
-                            </li>
-                            <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
-                            </li>
-                            <li>
-                                <span>2025/10/12</span>
-                                <span>最新活動</span>
-                                <span class="content">感謝愛心捐贈：小黑順利找到新家！</span>
-                            </li>
+                                <span>2025/09/12</span>
+                                <span>感謝名單</span>
+                                <span class="content"
+                                    >感謝「汪汪樂園」捐贈飼料20包，幫助我們照顧更多毛孩。</span
+                                >
+                            </li> -->
                         </ul>
                     </div>
 
