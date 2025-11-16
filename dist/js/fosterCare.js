@@ -20,11 +20,40 @@ const options = {
         async initItems() {
             let response = await fetch("/database/fosterCarePet_data.json");
             let data = await response.json();
+            console.log(data);
+            let items = [];
+            for (let uid in data) {
+                let item = data[uid];
+                items.uid = uid;
+                items.push(item);
+            }
+
+            this.items = items;
+            this.total = Math.ceil(this.items.length / this.once);
+        },
+        paginate() {
+            let start = (this.page - 1) * this.once;
+            let end = start + this.once;
+            return this.items.slice(start, end);
+        },
+        setPage(page) {
+            this.page = page;
+        },
+        prevPage() {
+            if (this.page <= 1) return;
+
+            this.page--;
+        },
+        nextPage() {
+            if (this.page >= this.total) return;
+
+            this.page++;
         },
     },
     mounted() {
         console.log("mounted");
+        this.initItems();
     },
 };
 
-// createApp(options).mount("#fosterCare-app");
+createApp(options).mount("#fosterCare-app");

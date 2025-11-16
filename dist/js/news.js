@@ -2,7 +2,11 @@ import { Page } from "./components/Page.js";
 import { PageBanner } from "./components/PageBanner.js";
 
 Page.loader("news");
-PageBanner.loader("#page-banner-endpoint", "最新消息", "提供最新消息，讓您了解老夫科技的最新動態。");
+PageBanner.loader(
+    "#page-banner-endpoint",
+    "最新消息",
+    "提供最新消息，讓您了解老夫科技的最新動態。"
+);
 
 const { createApp } = Vue;
 
@@ -20,7 +24,7 @@ const options = {
         async initItems() {
             let response = await fetch("/database/news-article.json");
             let data = await response.json();
-
+            console.log(data);
             let items = [];
             for (let uid in data) {
                 let item = data[uid];

@@ -19,72 +19,56 @@
         <div id="header-endpoint"></div>
         <div class="header-gap"></div>
         <div id="page-banner-endpoint"></div>
-        <div class="fosterCare" id="fosterCare-app">
+        <div class="fosterCare" id="fosterCare-app" v-cloak>
             <div class="container">
                 <h2 class="title">寄養專區</h2>
                 <div class="list-wrap">
                     <div class="list">
-                        <div class="item">
-                            <div class="pet-img">
-                                <img src="/images/fosterCare/dog-2.png" alt="" />
-                            </div>
-                            <div class="pet-info">
-                                <div class="wrap">
-                                    <div class="name">
-                                        <i class="fa-solid fa-paw"></i>
-                                        小可
-                                    </div>
-                                    <div class="date">收容日期：2025-09-25</div>
+                        <template v-for="(item, index) in paginate()" :key="index">
+                            <div class="item">
+                                <div class="pet-img">
+                                    <img src="/images/fosterCare/dog-2.png" alt="" />
                                 </div>
-                                <div class="content">
-                                    <div class="age">年齡：1 歲 2 個月</div>
-                                    <div class="breed">品種：米克斯</div>
-                                    <div class="gender">性別：公</div>
-                                    <div class="personality">
-                                        個性：膽小但親人，熟悉後會跟前跟後。
+                                <div class="pet-info">
+                                    <div class="wrap">
+                                        <div class="name">
+                                            <i class="fa-solid fa-paw"></i>
+                                            {{item.name}}
+                                        </div>
+                                        <div class="date">收容日期：{{item.date}}</div>
                                     </div>
-                                    <div class="health">
-                                        健康狀況：已結紮、打過 3 合一疫苗、內外驅已完成
+                                    <div class="content">
+                                        <div class="age">年齡：{{item.age}}</div>
+                                        <div class="breed">品種：{{item.breed}}</div>
+                                        <div class="gender">性別：{{item.gender}}</div>
+                                        <div class="personality">個性：{{item.personality}}</div>
+                                        <div class="health">健康狀況：{{item.health}}</div>
                                     </div>
-                                </div>
-                                <div class="more">
-                                    <a :href="`news-detail.html?uid=${item.uid}`" class="btn"
-                                        >詳細資料
-                                        <!-- <i class="fa-solid fa-arrow-right"></i> -->
-                                    </a>
+                                    <div class="more">
+                                        <a class="btn"
+                                            >詳細資料
+                                            <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="pet-img">
-                                <img src="/images/fosterCare/cat-1.png" alt="" />
-                            </div>
-                            <div class="pet-info">
-                                <div class="wrap">
-                                    <div class="name">
-                                        <i class="fa-solid fa-paw"></i>
-                                        奶茶
-                                    </div>
-                                    <div class="date">收容日期：2025/07/28</div>
-                                </div>
-                                <div class="content">
-                                    <div class="age">年齡：2 歲</div>
-                                    <div class="breed">品種：虎斑貓</div>
-                                    <div class="gender">性別：公</div>
-                                    <div class="personality">
-                                        個性：溫柔安靜，不挑食，適合第一次養寵物的家庭。
-                                    </div>
-                                    <div class="health">
-                                        健康狀況：已結紮、口腔狀況良好、疫苗完整
-                                    </div>
-                                </div>
-                                <div class="more">
-                                    <a :href="`news-detail.html?uid=${item.uid}`" class="btn"
-                                        >詳細資料
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </template>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <div class="pagination">
+                        <a href="#" @click.prevent="prevPage">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                        <template v-for="n in total" :key="n">
+                            <a href="#" :class="{ active: n === page }" @click.prevent="setPage(n)"
+                                >{{ n }}</a
+                            >
+                        </template>
+                        <a href="#" @click.prevent="nextPage">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
