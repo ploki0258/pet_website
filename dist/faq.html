@@ -1,31 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>毛孩同行 | 常見問題</title>
-        <meta
-            name="description"
-            content="「毛孩同行」是一個由志同道合的狗友自發組成的私人團體，致力於寵物寄養、臨時照護與浪浪救助。我們用愛與責任陪伴每隻毛孩，協助牠們安全過渡、找到溫暖的新家。"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        />
-        <link rel="stylesheet" href="./css/faq.css" />
-    </head>
 
-    <body>
-        <div id="header-endpoint"></div>
-        <div class="header-gap"></div>
-        <div id="page-banner-endpoint"></div>
-        <div class="faq">
-            <div class="container">
-                <h2 class="title">常見問題</h2>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>毛孩同行 | 常見問題</title>
+    <meta name="description" content="「毛孩同行」是一個由志同道合的狗友自發組成的私人團體，致力於寵物寄養、臨時照護與浪浪救助。我們用愛與責任陪伴每隻毛孩，協助牠們安全過渡、找到溫暖的新家。" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+</head>
+
+<body>
+    <div id="header-endpoint"></div>
+    <div class="header-gap"></div>
+    <div id="page-banner-endpoint"></div>
+    <div class="faq">
+        <div class="container">
+            <div id="faq-app">
+                <div class="faq-section" v-for="(section, index) in faqs" :key="index"
+                    :class="{ open: openIndex === index }">
+                    <h2 class="title" @click="toggle(index)" :class="{ active: openIndex === index }">
+                        {{ section.title }}
+                        <span class="arrow" :class="{ rotated: openIndex === index }">
+                            {{ openIndex === index ? '▲' : '▼' }}
+                        </span>
+                    </h2>
+
+                    <transition name="faq">
+                        <div v-show="openIndex === index" class="faq-list">
+                            <div class="faq-item" v-for="(item, i) in section.items" :key="i">
+                                <h3 class="question">{{ item.q }}</h3>
+                                <p class="answer">{{ item.a }}</p>
+                            </div>
+                        </div>
+                    </transition>
+                </div>
             </div>
+
+
+            <!-- <h2 class="title">如何領養</h2>
+            <div class="faq-item">
+                <h3 class="question">Q1：如何申請領養毛孩？</h3>
+                <p class="answer">
+                    A1：請先瀏覽我們的領養頁面，選擇您有興趣的毛孩，然後填寫線上申請表。我們會在收到申請後與您聯繫，安排面談和見面時間。
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">Q2：領養毛孩需要注意什麼？</h3>
+                <p class="answer">
+                    A2：領養前請確保您有足夠的時間、空間和資源來照顧毛孩。我們也會進行家庭訪問，以確保毛孩能夠進入一個安全和適合的環境。
+                </p>
+            </div>
+            <h2 class="title">如何寄養</h2>
+            <div class="faq-item">
+                <h3 class="question">Q1：如何申請寄養毛孩？</h3>
+                <p class="answer">
+                    A1：請填寫我們的寄養申請表，提供您的基本資訊和寄養經驗。我們會根據您的條件和毛孩的需求進行配對，並與您聯繫。
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">Q2：寄養期間需要注意什麼？</h3>
+                <p class="answer">
+                    A2：請確保毛孩的飲食、運動和健康需求得到滿足。如有任何問題或緊急情況，請立即聯繫我們的工作人員。
+                </p>
+            </div>
+            <h2 class="title">其他問題</h2>
+            <div class="faq-item">
+                <h3 class="question">Q1：我可以捐款支持毛孩同行嗎？</h3>
+                <p class="answer">
+                    A1：當然可以！我們非常感謝您的支持。請訪問我們的捐款頁面，了解更多捐款方式和用途。
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">Q2：我可以成為志工幫助毛孩同行嗎？</h3>
+                <p class="answer">
+                    A2：我們歡迎熱心的志工加入我們的行列。請填寫志工申請表，我們會與您聯繫，介紹志工機會和相關資訊。
+                </p>
+            </div> -->
         </div>
-        <div id="footer-endpoint"></div>
-    </body>
-    <script src="js/lib/vue.global.prod.js"></script>
-    <script type="module" src="./js/faq.js"></script>
+    </div>
+    <div id="footer-endpoint"></div>
+</body>
+<script src="js/lib/vue.global.prod.js"></script>
+<script type="module" src="./js/faq.js"></script>
+
 </html>

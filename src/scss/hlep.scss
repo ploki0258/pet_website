@@ -5,29 +5,114 @@
     --item-bg-color: #f8cca8;
 }
 
-.volunteer {
-    .btn {
-        color: #fc8b2f;
-        background-color: #f1f1f1;
-        font-size: 1rem;
-        font-weight: 600;
-        padding: 10px 25px;
-        border-radius: 10rem;
-        border-width: 0;
-        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);
-        transition: all 0.3s ease;
-        cursor: pointer;
+.item-wrap {
+    margin-bottom: 20px;
+    padding: 5px 10px;
 
-        &:hover {
-            background-color: #cdcdcd;
-            box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.8);
+    .title {
+        text-align: center;
+        text-shadow: 3px 2px 3px #0000007a;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+.volunteer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    p {
+        line-height: 1.5;
+    }
+
+    .list {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        list-style-type: disc;
+    }
+}
+
+.material-donations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        font-size: 1.2rem;
+
+        li {
+            padding: 5px 20px;
+            border-radius: 20px;
+            background-color: #fff3e0;
+            box-shadow: 3px 3px 5px 0px #3f3f3f;
         }
+    }
+}
+
+.btn {
+    color: #fc8b2f;
+    background-color: #f1f1f1;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 10rem;
+    border-width: 0;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #cdcdcd;
+        box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.8);
+    }
+}
+
+.donations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .item-donations-group {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        align-items: start;
+        margin-top: 30px;
+    }
+
+    .list {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 1.2rem;
     }
 }
 
 .item {
     color: var(--item-color);
     background-color: var(--item-bg-color);
+    padding: 5px;
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 15px;

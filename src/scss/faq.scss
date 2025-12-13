@@ -1,1 +1,52 @@
 @import "./components/page";
+
+.faq-section {
+    .title {
+        margin-bottom: 15px;
+        border: 2px solid #777;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e5e2e2;
+        }
+
+        &.active {
+            background-color: #ccc;
+        }
+        &.open {
+            .title {
+                background-color: #ddd;
+                border-color: #444;
+            }
+        }
+        .title {
+            .arrow {
+                display:inline-block;
+                transition: transform .3s ease;
+            }
+            .arrow.rotated {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.faq {
+    margin-top: 2rem;
+
+    .faq-item {
+        margin-bottom: 2rem;
+    }
+
+    .question {
+        margin-bottom: 1rem;
+    }
+
+    .answer {
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+}
