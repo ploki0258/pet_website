@@ -1,170 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>毛孩同行 | 聯絡我們</title>
-        <meta
-            name="description"
-            content="老夫科技是一家專注於科技領域的公司，提供最優質的科技產品和服務。"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        />
-        <link rel="stylesheet" href="./css/contact.css" />
-    </head>
 
-    <body>
-        <div id="header-endpoint"></div>
-        <div class="header-gap"></div>
-        <div id="page-banner-endpoint"></div>
-        <div class="contact-info">
-            <div class="container">
-                <div class="wrap">
-                    <div class="information">
-                        <div class="title">聯絡資訊</div>
-                        <div class="information-wrap">
-                            <div class="info-item address">
-                                <div class="icon-wrap">
-                                    <div class="icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="subtitle">地址</div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>毛孩同行 | 聯絡我們</title>
+    <meta name="description" content="老夫科技是一家專注於科技領域的公司，提供最優質的科技產品和服務。" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+</head>
+
+<body>
+    <div id="header-endpoint"></div>
+    <div class="header-gap"></div>
+    <div id="page-banner-endpoint"></div>
+    <div class="contact-info">
+        <div class="container">
+            <div class="wrap">
+                <div class="information">
+                    <div class="title">聯絡資訊</div>
+                    <div class="information-wrap">
+                        <div class="info-item address">
+                            <div class="icon-wrap">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <div class="content">新北市毛孩區幸福路88號</div>
+                                <div class="subtitle">地址</div>
                             </div>
-                            <div class="info-item phone">
-                                <div class="icon-wrap">
-                                    <div class="icon">
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <div class="subtitle">電話</div>
+                            <div class="content">新北市毛孩區幸福路88號</div>
+                        </div>
+                        <div class="info-item phone">
+                            <div class="icon-wrap">
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
                                 </div>
-                                <div class="content">(02) 1234-5678</div>
+                                <div class="subtitle">電話</div>
                             </div>
-                            <div class="info-item email">
-                                <div class="icon-wrap">
-                                    <div class="icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <div class="subtitle">電子郵件</div>
+                            <div class="content">(02) 1234-5678</div>
+                        </div>
+                        <div class="info-item email">
+                            <div class="icon-wrap">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
                                 </div>
-                                <div class="content">service@maohai.com.tw</div>
+                                <div class="subtitle">電子郵件</div>
                             </div>
+                            <div class="content">service@maohai.com.tw</div>
                         </div>
                     </div>
-                    <div class="form" id="form-app" v-cloak>
-                        <form action="" @submit.prevent="submit">
-                            <div class="title">發送訊息</div>
-                            <div class="input-group">
-                                <label for="name" class="label">姓名&#8727;</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    class="input-item"
-                                    v-model="form.name"
-                                    required
-                                />
-                            </div>
-                            <div class="input-group">
-                                <label for="phone" class="label">手機&#8727;</label>
-                                <input
-                                    type="text"
-                                    id="phone"
-                                    name="phone"
-                                    class="input-item"
-                                    v-model="form.name"
-                                    required
-                                />
-                            </div>
-                            <div class="input-group">
-                                <label for="tel" class="label">電話</label>
-                                <input
-                                    type="text"
-                                    id="tel"
-                                    name="tel"
-                                    class="input-item"
-                                    v-model="form.name"
-                                />
-                            </div>
-                            <div class="input-group">
-                                <label for="email" class="label">電子郵件&#8727;</label>
-                                <input
-                                    type="text"
-                                    id="email"
-                                    name="email"
-                                    class="input-item"
-                                    v-model="form.email"
-                                    required
-                                />
-                            </div>
-                            <div class="input-group">
-                                <label for="category" class="label">主旨分類&#8727;</label>
-                                <!-- <input
-                                    type="text"
-                                    id="category"
-                                    name="email"
-                                    class="input-item"
-                                    v-model="form.email"
-                                /> -->
-                                <select name="category" id="category" class="input-item" required>
-                                    <option value="">-- 請選擇分類 --</option>
-                                    <option value="">寄養問題</option>
-                                    <option value="">援助問題</option>
-                                    <option value="">捐贈問題</option>
-                                    <option value="">其他問題</option>
-                                </select>
-                            </div>
-                            <div class="input-group">
-                                <label for="subject" class="label">主旨&#8727;</label>
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    name="subject"
-                                    class="input-item"
-                                    v-model="form.subject"
-                                    required
-                                />
-                            </div>
-                            <div class="input-group">
-                                <label for="content" class="label">訊息內容&#8727;</label>
-                                <textarea
-                                    id="content"
-                                    name="content"
-                                    class="input-item"
-                                    v-model="form.content"
-                                    required
-                                ></textarea>
-                            </div>
-                            <div class="button-group">
-                                <button class="btn" type="submit">送出</button>
-                            </div>
-                        </form>
-                    </div>
+                </div>
+                <div class="form" id="form-app" v-cloak>
+                    <form action="" @submit.prevent="submit">
+                        <div class="title">發送訊息</div>
+                        <div class="input-group">
+                            <label for="name" class="label">姓名&#8727;</label>
+                            <input type="text" id="name" name="name" class="input-item" v-model="form.name" required />
+                        </div>
+                        <div class="input-group">
+                            <label for="phone" class="label">手機&#8727;</label>
+                            <input type="text" id="phone" name="phone" class="input-item" v-model="form.tel" required />
+                        </div>
+                        <div class="input-group">
+                            <label for="tel" class="label">電話</label>
+                            <input type="text" id="tel" name="tel" class="input-item" v-model="form.phone" />
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="label">電子郵件&#8727;</label>
+                            <input type="text" id="email" name="email" class="input-item" v-model="form.email"
+                                required />
+                        </div>
+                        <div class="input-group">
+                            <label for="category" class="label">主旨分類&#8727;</label>
+                            <select name="category" id="category" class="input-item" v-model="form.category" required>
+                                <option value="">-- 請選擇分類 --</option>
+                                <option value="寄養問題">寄養問題</option>
+                                <option value="援助問題">援助問題</option>
+                                <option value="捐贈問題">捐贈問題</option>
+                                <option value="其他問題">其他問題</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="subject" class="label">主旨&#8727;</label>
+                            <input type="text" id="subject" name="subject" class="input-item" v-model="form.subject"
+                                required />
+                        </div>
+                        <div class="input-group">
+                            <label for="content" class="label">訊息內容&#8727;</label>
+                            <textarea id="content" name="content" class="input-item" v-model="form.content"
+                                required></textarea>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn" type="submit">送出</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="map">
-            <div class="container">
-                <div class="title">公司位置</div>
-                <div class="google-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7279.78708738028!2d120.699475!3d24.175466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917ede8946943%3A0x64fbd95120c18393!2z5aSn6LK35a62IOWMl-Wxr-W6lw!5e0!3m2!1szh-TW!2stw!4v1759238253506!5m2!1szh-TW!2stw"
-                        width="100%"
-                        height="450"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </div>
+    </div>
+    <div class="map">
+        <div class="container">
+            <div class="title">公司位置</div>
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7279.78708738028!2d120.699475!3d24.175466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917ede8946943%3A0x64fbd95120c18393!2z5aSn6LK35a62IOWMl-Wxr-W6lw!5e0!3m2!1szh-TW!2stw!4v1759238253506!5m2!1szh-TW!2stw"
+                    width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div id="footer-endpoint"></div>
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/lib/vue.global.prod.js"></script>
-    <script type="module" src="./js/contact.js"></script>
+    </div>
+    <div id="footer-endpoint"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/lib/vue.global.prod.js"></script>
+<script type="module" src="./js/contact.js"></script>
+
 </html>

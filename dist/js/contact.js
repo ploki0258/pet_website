@@ -9,7 +9,10 @@ const options = {
         return {
             form: {
                 name: "",
+                phone: "",
+                tel: "",
                 email: "",
+                category: "",
                 subject: "",
                 content: "",
             },
@@ -18,8 +21,8 @@ const options = {
     },
     methods: {
         async submit() {
-            // console.log(this.form);
-            // console.log("submit!!");
+            console.log(this.form);
+            console.log("submit!!");
             if (this.isSending) {
                 return;
             }
@@ -37,7 +40,8 @@ const options = {
                     }
                     form.append(field, this.form[field]);
                 }
-                let api = "https://script.google.com/macros/s/AKfycbyTcXNQQ7rU4QE3aZEfeW1PaizSn3p0AdId_zv1ezWE_8R0xVf-7z-XEygbMUSp7Qg/exec";
+                let api =
+                    "https://script.google.com/macros/s/AKfycbznQBzD0MBcLJx-vkyHAodyov-gvgxYXpeuaKTJfu_vTRzLRRp5eLaHULW5ZUjwiw2lsQ/exec";
 
                 Swal.fire({
                     title: "發送中...",
