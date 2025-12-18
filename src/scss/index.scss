@@ -233,21 +233,21 @@
             gap: 15px;
             overflow: hidden;
 
-            &:hover {
-                // &::before {
-                //     content: "";
-                //     position: absolute;
-                //     top: 0;
-                //     left: 0;
-                //     width: 100%;
-                //     height: 6px;
-                //     background-color: #2b6fe3;
-                // }
+            // &:hover {
+            //     &::before {
+            //         content: "";
+            //         position: absolute;
+            //         top: 0;
+            //         left: 0;
+            //         width: 100%;
+            //         height: 6px;
+            //         background-color: #2b6fe3;
+            //     }
 
-                // .icon {
-                //     transform: rotate(15deg) scale(1.2);
-                // }
-            }
+            //     .icon {
+            //         transform: rotate(15deg) scale(1.2);
+            //     }
+            // }
 
             .icon {
                 @extend %item;
@@ -256,25 +256,24 @@
                 transition: all 0.3s ease;
             }
 
-            .cotent {
+            .content-group {
                 width: 100%;
                 overflow-y: auto;
                 text-align: left;
                 line-height: 1.5;
                 color: #6b7280;
                 max-height: 300px;
-                // border: 1px solid red;
 
                 li {
                     padding: 10px 0;
-                    padding-left: 400px;
+                    // padding-left: 400px;
+                    padding-left: calc(100% / 3.5);
                     font-size: 1.1rem;
                     border-bottom: 1px solid #ccc;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     gap: 30px;
-                    // border: 1px solid blue;
 
                     &:last-child {
                         border-bottom: none;
