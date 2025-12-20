@@ -6,7 +6,7 @@
         "breed": "米克斯",
         "gender": "公",
         "date": "2025/09/25",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/dog-01.png",
         "personality": "膽小但親人，熟悉後會跟前跟後。",
         "health": "已結紮、打過 3 合一疫苗、內外驅已完成"
     },
@@ -17,7 +17,7 @@
         "breed": "米克斯",
         "gender": "母",
         "date": "2025/08/15",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/dog-02.png",
         "personality": "活潑愛玩，對小朋友很友善，喜歡跟人撒嬌。",
         "health": "未結紮（可協助安排），已施打疫苗"
     },
@@ -28,7 +28,7 @@
         "breed": "柴犬",
         "gender": "公",
         "date": "2025/10/02",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/dog-03.png",
         "personality": "穩定、聰明、懂指令，適合有飼養經驗的家庭。",
         "health": "已結紮、無遺傳疾病、體內寄生蟲已清除"
     },
@@ -39,7 +39,7 @@
         "breed": "虎斑貓",
         "gender": "母",
         "date": "2025/07/28",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/cat-04.png",
         "personality": "溫柔安靜，不挑食，適合第一次養寵物的家庭。",
         "health": "已結紮、口腔狀況良好、疫苗完整"
     },
@@ -50,7 +50,7 @@
         "breed": "米克斯幼犬",
         "gender": "母",
         "date": "2025/11/01",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/dog-05.png",
         "personality": "超級活潑外向，喜歡跟狗一起玩，適合喜愛戶外活動的人。",
         "health": "幼犬三劑疫苗第 1 劑已施打"
     },
@@ -61,7 +61,7 @@
         "breed": "米克斯",
         "gender": "公",
         "date": "2025/10/10",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/dog-06.png",
         "personality": "害羞但親人，習慣跟人靠近，需要耐心陪伴。",
         "health": "已結紮、已驅蟲"
     },
@@ -72,7 +72,7 @@
         "breed": "黃金混米克斯",
         "gender": "母",
         "date": "2025/06/30",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/dog-07.png",
         "personality": "個性溫柔、會握手，適合新手飼主。",
         "health": "健康良好、已施打疫苗"
     },
@@ -83,7 +83,7 @@
         "breed": "長毛混種",
         "gender": "母",
         "date": "2025/08/01",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/cat-08.png",
         "personality": "膽小但願意親近，適合有耐心的飼主。",
         "health": "皮膚恢復中，已就醫治療"
     },
@@ -94,7 +94,7 @@
         "breed": "拉布拉多混種",
         "gender": "公",
         "date": "2025/09/10",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/dog-09.png",
         "personality": "超級親人，適合喜歡大型犬的家庭。",
         "health": "已結紮、健康檢查正常"
     },
@@ -105,7 +105,7 @@
         "breed": "三花貓",
         "gender": "母",
         "date": "2025/07/05",
-        "image": "/assets/pets/xiaojiang.jpg",
+        "image": "/images/fosterCare/cat-10.png",
         "personality": "很會撒嬌，適合喜歡安靜與溫柔狗狗的人。",
         "health": "已施打疫苗、已結紮"
     }

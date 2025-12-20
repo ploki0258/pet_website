@@ -27,7 +27,7 @@
                         <template v-for="(item, index) in paginate()" :key="index">
                             <div class="item">
                                 <div class="pet-img">
-                                    <img src="/images/fosterCare/dog-2.png" alt="" />
+                                    <img :src="item.image" :alt="item.name" />
                                 </div>
                                 <div class="pet-info">
                                     <div class="wrap">

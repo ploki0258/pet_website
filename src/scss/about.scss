@@ -70,6 +70,21 @@
     }
 }
 
+.title {
+    &::before {
+        content: "";
+        background: url("/images//header/menu-icon.svg");
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        transform: rotate(-15deg);
+        padding-right: 10px;
+        position: absolute;
+        top: 25px;
+        left: -8px;
+    }
+}
+
 .value {
     @include content-bg(#f9f9f9);
     @include content-padding(80px, 0);

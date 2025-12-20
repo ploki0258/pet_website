@@ -27,7 +27,7 @@
                 transform: translateY(-10px);
 
                 .title {
-                    color: #02006e;
+                    color: #a5460f;
                 }
             }
 
@@ -35,7 +35,7 @@
                 font-weight: 600;
                 font-size: 0.9rem;
                 font-family: sans-serif;
-                color: #0d529f;
+                color: #c4560d;
             }
 
             .title {
@@ -55,7 +55,7 @@
             .more {
                 font-size: 1rem;
                 font-weight: 500;
-                color: #0d529f;
+                color: #c4560d;
 
                 i {
                     transition: all 0.3s ease;
@@ -72,7 +72,7 @@
     }
 
     .navigation {
-        --color: #006b8e;
+        --color: #fdab5e;
         margin-top: 30px;
 
         .pagination {
@@ -92,7 +92,7 @@
                 width: var(--size);
                 height: var(--size);
                 border-radius: 500px;
-                border: 2px solid #8ac1ff;
+                border: 2px solid #ffd08a;
                 transition: all 0.3s ease;
 
                 &:hover,
