@@ -23,6 +23,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
         .logo {
             display: flex;
@@ -109,7 +110,7 @@
     margin-top: var(--global-header-height);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
     .header {
         .wrap {
             justify-content: flex-end;
@@ -124,8 +125,7 @@
 
             .logo {
                 position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
+                left: 0;
             }
         }
 
@@ -139,7 +139,7 @@
                     background-color: #fff;
                     width: 100%;
                     padding: 40px 0;
-                    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.184);
+                    box-shadow: 3px 4px 10px 5px rgba(0, 0, 0, 0.18);
                     z-index: 9;
 
                     ul {
